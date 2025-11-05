@@ -1,0 +1,40 @@
+{
+  "backup": {
+    "type": "BMR",
+    "compression": "Maximum",
+    "encrypt": false,
+    "volumesToBackup": ["C:"],
+    "excludeFolders": [
+      "C:\\Windows\\Temp",
+      "C:\\Temp",
+      "C:\\Users\\*\\AppData\\Local\\Temp"
+    ],
+    "retentionDays": 30,
+    "verifyAfterBackup": true
+  },
+  "storage": {
+    "primary": "objectStorage",
+    "tempLocation": "C:\\BackupTemp",
+    "chunkSizeMB": 100,
+    "maxConcurrentUploads": 3
+  },
+  "network": {
+    "useCompression": true,
+    "maxBandwidthMBps": 0,
+    "retryAttempts": 3,
+    "retryDelaySeconds": 30
+  },
+  "notifications": {
+    "enabled": false,
+    "emailOnSuccess": false,
+    "emailOnFailure": true,
+    "webhookUrl": ""
+  },
+  "advanced": {
+    "useShadowCopy": true,
+    "includeSystemReserved": true,
+    "createRecoveryPartition": true,
+    "skipPagefile": true,
+    "skipHibernation": true
+  }
+}

@@ -1,0 +1,25 @@
+# Credenciales sensibles
+config/credentials.json
+
+# Logs
+logs/
+*.log
+
+# Archivos temporales
+temp/
+*.tmp
+*.bak
+
+# Backups locales
+backups/
+*.vhd
+*.vhdx
+*.wim
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# PowerShell
+*.ps1~
